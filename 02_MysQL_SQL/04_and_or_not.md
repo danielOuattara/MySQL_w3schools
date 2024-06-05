@@ -43,70 +43,70 @@ SELECT column1, column2, ...
 
 ##  Demo Database
 
-The table below shows the complete `Customers` table from
+The table below shows the complete `customers` table from
 the Northwind sample database:
 
 ## AND Example
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where country is `Germany` AND city is `Berlin`:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE Country = 'Germany' AND City = 'Berlin';
+    FROM customers
+    WHERE country = 'Germany' AND city = 'Berlin';
 ```
 
 ##  OR Example
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where city is `Berlin` OR `Stuttgart`:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE City = 'Berlin' OR City = 'Stuttgart';
+    FROM customers
+    WHERE city = 'Berlin' OR city = 'Stuttgart';
 ```
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where country is `Germany` OR `Spain`:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE Country = 'Germany' OR Country = 'Spain';
+    FROM customers
+    WHERE country = 'Germany' OR country = 'Spain';
 ```
 
 ## NOT Example
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where country is NOT `Germany`:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE NOT Country = 'Germany';
+    FROM customers
+    WHERE NOT country = 'Germany';
 ```
 
 ##  Combining AND, OR and NOT
 
 You can also combine the AND, OR and NOT operators.
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where country is `Germany` AND city must be `Berlin` OR `Stuttgart`
 > (use parenthesis to form complex expressions):
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE Country = 'Germany' AND (City = 'Berlin' OR City = 'Stuttgart');
+    FROM customers
+    WHERE country = 'Germany' AND (city = 'Berlin' OR city = 'Stuttgart');
 ```
 
-> The following SQL statement selects all fields from `Customers`
+> The following SQL statement selects all fields from `customers`
 > where country is NOT `Germany` and NOT `USA`:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE NOT Country = 'Germany' AND NOT Country = 'USA';
+    FROM customers
+    WHERE NOT country = 'Germany' AND NOT country = 'USA';
 ```
