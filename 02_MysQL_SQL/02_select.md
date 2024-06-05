@@ -27,9 +27,9 @@ SELECT * FROM table_name;
 
 In this tutorial we will use the well-known Northwind sample database.
 
-Below is a selection from the `Customers` table in the Northwind sample database:
+Below is a selection from the `customers` table in the Northwind sample database:
 
-| CustomerID |            CustomerName            |     ContactName    |            Address            |     City    | PostalCode | Country |
+| CustomerID |            CustomerName            |     ContactName    |            Address            |     City    | PostalCode | country |
 |:----------:|:----------------------------------:|:------------------:|:-----------------------------:|:-----------:|:----------:|:-------:|
 | 1          | Alfreds Futterkiste                | Maria Anders       | Obere Str. 57                 | Berlin      | 12209      | Germany |
 | 2          | Ana Trujillo Emparedados y helados | Ana Trujillo       | Avda. de la Constitución 2222 | México D.F. | 05021      | Mexico  |
@@ -40,17 +40,18 @@ Below is a selection from the `Customers` table in the Northwind sample database
 ##  SELECT Columns Example
 
 The following SQL statement selects the `CustomerName`, `City`,
-and `Country` columns from the `Customers` table:
+and `country` columns from the `customers` table:
 
 ```sql
-SELECT CustomerName, City, Country FROM Customers;
-SELECT * Example
+SELECT customer_name, city, country FROM customers;
 ```
 
-The following SQL statement selects ALL the columns from the `Customers` table:
+## SELECT * Example
+
+The following SQL statement selects ALL the columns from the `customers` table:
 
 ```sql
-SELECT * FROM Customers;
+SELECT * FROM customers;
 ```
 
 ##  The MySQL SELECT DISTINCT Statement
@@ -71,10 +72,10 @@ FROM table_name;
 ##  SELECT Example Without DISTINCT
 
 The following SQL statement selects all (including the duplicates)
-values from the `Country` column in the `Customers` table:
+values from the `country` column in the `customers` table:
 
 ```sql
-SELECT Country FROM Customers;
+SELECT country FROM customers;
 ```
 
 Now, let us use the `SELECT DISTINCT` statement and see the result.
@@ -82,15 +83,15 @@ Now, let us use the `SELECT DISTINCT` statement and see the result.
 ## SELECT DISTINCT Examples
 
 The following SQL statement selects only the `DISTINCT` values from
-the `Country` column in the `Customers` table:
+the `country` column in the `customers` table:
 
 ```sql
-SELECT DISTINCT Country FROM Customers;
+SELECT DISTINCT country FROM customers;
 ```
 
 The following SQL statement counts and returns the number of different
-(distinct) countries in the `Customers` table:
+(distinct) countries in the `customers` table:
 
 ```sql
-SELECT COUNT(DISTINCT Country) FROM Customers;
+SELECT COUNT(DISTINCT country) FROM customers;
 ```
