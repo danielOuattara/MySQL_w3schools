@@ -24,7 +24,7 @@ it is also used in UPDATE, DELETE, etc.!
 
 ## Demo Database
 
-Below is a selection from the "Customers" table in the Northwind sample database:
+Below is a selection from the "customers" table in the Northwind sample database:
 
 ##  WHERE Clause Example
 
@@ -32,8 +32,8 @@ Below is a selection from the "Customers" table in the Northwind sample database
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE Country = 'Mexico';
+    FROM customers
+    WHERE country = 'Mexico';
 ```
 
 ##  Text Fields vs. Numeric Fields
@@ -45,8 +45,8 @@ However, numeric fields should not be enclosed in quotes:
 
 ```sql
 SELECT * 
-    FROM Customers
-    WHERE CustomerID = 1;
+    FROM customers
+    WHERE id = 1;
 ```
 
 ##  Operators in The WHERE Clause
